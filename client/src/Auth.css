@@ -1,0 +1,164 @@
+/* ====================================
+   AUTH CONTAINER & LAYOUT
+======================================= */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: 
+    url('https://www.transparenttextures.com/patterns/paper-fibers.png'),
+    var(--clr-bg);
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: 'Alex Brush', cursive;
+  padding: 2rem;
+}
+
+.auth-card {
+  background: #fffefb;
+  border-radius: 10px;
+  padding: 2.5rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 
+    0 2px 6px rgba(154, 127, 105, 0.12),
+    0 1px 4px rgba(206, 145, 125, 0.1);
+  text-align: center;
+}
+
+/* ====================================
+   AUTH CARD HEADER
+======================================= */
+.auth-card h2 {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.auth-subtitle {
+  color: var(--clr-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+/* ====================================
+   AUTH FORM STYLES
+======================================= */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--clr-secondary);
+  border-radius: 6px;
+  background: #fffefb;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--clr-primary);
+  outline: none;
+}
+
+/* ====================================
+   AUTH BUTTON STYLES
+======================================= */
+.auth-button {
+  background-color: var(--clr-primary);
+  color: #fffefb;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: var(--clr-secondary);
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ====================================
+   ERROR MESSAGE STYLES
+======================================= */
+.error-message {
+  background-color: #f8d3d3;
+  color: #b63838;
+  border: 1px solid #f5aaaa;
+  border-radius: 6px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* ====================================
+   AUTH SWITCH STYLES
+======================================= */
+.auth-switch {
+  margin-top: 2rem;
+  border-top: 1px solid #dfb6a8;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--clr-secondary);
+}
+
+.switch-link {
+  background: none;
+  border: none;
+  color: var(--clr-accent-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.switch-link:hover {
+  color: var(--clr-primary);
+}
+
+/* ====================================
+   RESPONSIVE DESIGN
+======================================= */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 24px;
+    margin: 16px;
+  }
+  
+  .auth-card h2 {
+    font-size: 24px;
+  }
+  
+  .auth-subtitle {
+    font-size: 14px;
+  }
+} 

@@ -1,0 +1,117 @@
+/* ====================================
+   APP TITLE STYLES
+======================================= */
+.title {
+  grid-area: header;
+  text-align: center;
+  font-size: calc(6vw + 2rem);
+  font-family: 'Alex Brush', cursive;
+  color: var(--clr-primary);
+  margin: 0.2em 0 0.5em;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.05);
+  letter-spacing: 5px;
+  opacity: 0.3;
+}
+
+/* ====================================
+   BUTTON & FORM STYLES
+======================================= */
+form {
+  display: flex;
+  gap: 0.5em;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.btn.create {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--clr-primary);
+  margin-right: 0.25em;
+  transition: opacity 250ms ease-in;
+}
+
+form[data-new-task-form] .btn.create {
+  padding-bottom: 2rem;
+}
+
+form[data-new-list-form] .btn.create {
+  margin-left: -0.5rem;
+}
+
+.btn.create:hover {
+  color: var(--clr-secondary);
+}
+
+.btn.delete {
+  font-size: 1rem;
+  color: #bcafa5;
+  opacity: 0.9;
+  transition: all 200ms ease;
+}
+
+.btn.delete:hover {
+  opacity: 1;
+  color: var(--clr-accent-rose);
+}
+
+/* ====================================
+   INPUT FIELD STYLES
+======================================= */
+.new {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--clr-secondary);
+  padding: 0.3em;
+  font-size: inherit;
+  color: inherit;
+  transition: border-bottom 200ms;
+}
+
+.new:focus {
+  border-bottom: 2px solid var(--clr-primary);
+  outline: none;
+}
+
+.new::placeholder {
+  color: var(--clr-secondary);
+  opacity: 1;
+}
+
+.new.task {
+  background-color: #fffefb;
+}
+
+/* ====================================
+   LOGOUT BUTTON STYLES
+======================================= */
+.logout-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: var(--clr-primary);
+  padding: 6px 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background: var(--clr-primary);
+  color: #fffefb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

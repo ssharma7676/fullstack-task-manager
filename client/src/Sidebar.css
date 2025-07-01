@@ -1,0 +1,32 @@
+.all-tasks {
+  grid-area: lists;
+  padding: 1rem;
+}
+
+.task-list {
+  list-style: disc;
+  padding-left: 1.3em;
+}
+
+.task-list-title {
+  color: var(--clr-text);
+}
+
+.list-name {
+  cursor: pointer;
+  transition: color 150ms ease;
+  color: var(--clr-primary);
+  margin-bottom: 0.5em;
+}
+
+.list-name:hover {
+  color: var(--clr-accent-dark);
+  font-weight: 500;
+  transform: translateY(-1px) scale(1.01);
+  transition: transform 200ms ease, color 200ms ease;
+}
+
+.list-name.active-list {
+  color: var(--clr-accent-dark);
+  font-weight: 1000;
+}
