@@ -1,6 +1,6 @@
 # Full Stack Todo App
 
-A modern todo application built with React, Node.js, Express, and MongoDB.
+A modern task management application built with React, Node.js, Express, and MongoDB.
 
 ## Features
 - User authentication (JWT)
