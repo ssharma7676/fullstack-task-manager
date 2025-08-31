@@ -8,7 +8,7 @@ A modern task management application built with React, Node.js, Express, and Mon
 Existing productivity tools often separate long-term planning from daily task management, creating a fragmented workflow. This app unifies planning and task execution in an intuitive interface. Features like drag-and-drop task reordering, visual scheduling, and clear status indicators make both long-term planning and day-to-day task management feel natural and manageable.
 
 ## 🚀 Potential Impact
- By integrating planning and task management, this app helps users organize daily tasks efficiently while maintaining a clear view of upcoming goals and priorities. It can increase productivity, reduce stress through structured visual organization, and support better time management with intelligent scheduling and status tracking.
+By integrating planning and task management, this app helps users organize daily tasks efficiently while maintaining a clear view of upcoming goals and priorities. It can increase productivity, reduce stress through structured visual organization, and support better time management with intelligent scheduling and status tracking.
  
 ---
 
